@@ -1,0 +1,29 @@
+.title {
+  text-align: center;
+}
+
+.chart {
+  width: 100%;
+  min-height: 85%;
+  text-align: center;
+}
+
+.table {
+  text-align: center;
+}
+.table2 {
+  width: 120%;
+  min-height: 0;
+  height: 79%;
+  margin: auto;
+}
+
+.topnav {
+  padding-left: 1%;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.google-visualization-table-td {
+text-align: center !important;
+}

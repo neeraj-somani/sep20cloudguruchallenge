@@ -25,6 +25,13 @@ setuptools.setup(
         "aws-cdk.aws_sns==1.89.0",
         "aws-cdk.aws_sns_subscriptions==1.89.0",
         "aws-cdk.aws_s3==1.89.0",
+        "aws-cdk.aws_events==1.89.0",
+        "aws-cdk.aws_events_targets==1.89.0",
+        "aws-cdk.aws_dynamodb==1.89.0",
+        "aws-cdk.aws_apigateway==1.89.0",
+        "cdk-spa-deploy==1.89.0",
+        "botocore",
+        "boto3",
     ],
 
     python_requires=">=3.6",
