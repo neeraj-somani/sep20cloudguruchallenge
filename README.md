@@ -80,5 +80,12 @@ Outcome
 | Backend  | ![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiZGZHNUNDS0JqSnNVSlhyU21zdDB1VnNETVlSVDl6NlV3R3FadHB3TkhYMm1aZlpJNTE5R1NqYUJsOGxrMWgxdkJzQ0w1Y09ibU5TRm5ZYnM4NXR3Mk93PSIsIml2UGFyYW1ldGVyU3BlYyI6IjFkaHQvNkJBR05WK1ZJZWkiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)|
 | Frontend | ![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiRjZFajBNNFlBcEpVall4VXgxTUY3SHFaR1hvcUtwd25lcjBqM21DQ0s2QU9RUityRDBNZXVjcnlpQ0N6SWl0dDdJSGRZRklmVXgwM1pKaDQ0a3M5NWtFPSIsIml2UGFyYW1ldGVyU3BlYyI6InF6aWtXVjJLc25HRklIY0UiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)|
 
-Tech Stack
+References 
 -------
+[mostly from official CDK documentation](https://docs.aws.amazon.com/cdk/latest/guide/home.html)
+
+Special Thanks: 
+-------
+[for Frontend Design](https://github.com/tbhagat/ETLChallengeBackEnd)
+
+[for Bckend Design](https://github.com/dashmug/us-covid-stats)
