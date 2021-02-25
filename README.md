@@ -1,5 +1,5 @@
 
-# Welcome to your CDK Python project!
+# Welcome to Sep-2020 [#CloudGuruChallenge] (https://acloudguru.com/blog/news/introducing-the-cloudguruchallenge) project! [Event-Driven Python on AWS] (https://acloudguru.com/blog/engineering/cloudguruchallenge-python-aws-etl) 
 
 You should explore the contents of this project. It demonstrates a CDK app with an instance of a stack (`sep20cloudguruchallenge_stack`)
 which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.
