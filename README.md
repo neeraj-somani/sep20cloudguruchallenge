@@ -56,7 +56,7 @@ $ pytest
 
 To add additional dependencies, for example other CDK libraries, just add to
 your requirements.txt file and rerun the `pip install -r requirements.txt`
-command.
+command. to learn more about CDK please go through official [AWS Documentation](https://docs.aws.amazon.com/cdk/latest/guide/home.html)
 
 ## Useful commands
 
