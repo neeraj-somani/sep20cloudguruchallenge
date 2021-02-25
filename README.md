@@ -34,6 +34,8 @@ Visualization (frontend) steps:
 
 ![frontend-Visualization - Cloudformation stack design](images/Frontend-stack-Design.png?raw=true "ETL")
 
+Helpful CDK Overview
+-------
 You should explore the contents of this project. It demonstrates a CDK app with two instances of a stack (`backend_stack`) and (`frontend_stack`).
 which contains all AWS related resources as illustrated in below architecture diagram.
 
