@@ -4,6 +4,35 @@ Welcome to Sep-2020 CloudGuruChallenge
 
 [Event-Driven Python on AWS](https://acloudguru.com/blog/engineering/cloudguruchallenge-python-aws-etl) organized by [A Cloud Guru](https://acloudguru.com/).
 
+Outcome
+-------
+
+[Live demo](https://sep20cloudguruchallenge-spadeploywebsitebucket1e-1dqr7kpvnyk14.s3-us-west-2.amazonaws.com/index.html)
+
+[Read my blog article about this project.]
+
+|   | deployment status |
+|----------|-------------------|
+| Backend  | ![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiZGZHNUNDS0JqSnNVSlhyU21zdDB1VnNETVlSVDl6NlV3R3FadHB3TkhYMm1aZlpJNTE5R1NqYUJsOGxrMWgxdkJzQ0w1Y09ibU5TRm5ZYnM4NXR3Mk93PSIsIml2UGFyYW1ldGVyU3BlYyI6IjFkaHQvNkJBR05WK1ZJZWkiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)|
+| Frontend | ![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiRjZFajBNNFlBcEpVall4VXgxTUY3SHFaR1hvcUtwd25lcjBqM21DQ0s2QU9RUityRDBNZXVjcnlpQ0N6SWl0dDdJSGRZRklmVXgwM1pKaDQ0a3M5NWtFPSIsIml2UGFyYW1ldGVyU3BlYyI6InF6aWtXVjJLc25HRklIY0UiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)|
+
+
+Architecture Overview
+-------
+Data Pipeline (Backend) steps:
+1. Job Schduling : Implemented through Event Bridge rules.
+2. Extraction: Implemented using Lambda function (python) to extract data directly from source github repository.
+3. Transformation: Pandas module used to perform data processing tasks. Lambda function used to implement this step.
+4. Load: Data has been loaded to DynamoDB as batch output. for daily incremental load, S3 bucket is used to refer previous run file.
+5. Notification: SNS notification service has been implemented to notify the user after completion of the ETL job.
+
+![Backend-DataPipeline - Cloudformation stack design](images/Backend-Stack-Design.png?raw=true "ETL")
+
+Visualization (frontend) steps:
+1. Another S3 bucket has been used to host frontend web-pages for this project.
+2. An API Gateway service used to fetch data from Dynamodb, using lambda function. Please see below frontend architecture diagram.
+
+![frontend-Visualization - Cloudformation stack design](images/Frontend-stack-Design.png?raw=true "ETL")
 
 You should explore the contents of this project. It demonstrates a CDK app with two instances of a stack (`backend_stack`) and (`frontend_stack`).
 which contains all AWS related resources as illustrated in below architecture diagram.
@@ -68,18 +97,6 @@ command. To learn more about CDK please go through official [AWS Documentation](
 
 Enjoy!
 
-Outcome
--------
-
-[Live demo](https://sep20cloudguruchallenge-spadeploywebsitebucket1e-1dqr7kpvnyk14.s3-us-west-2.amazonaws.com/index.html)
-
-[Read my blog article about this project.]
-
-|   | deployment status |
-|----------|-------------------|
-| Backend  | ![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiZGZHNUNDS0JqSnNVSlhyU21zdDB1VnNETVlSVDl6NlV3R3FadHB3TkhYMm1aZlpJNTE5R1NqYUJsOGxrMWgxdkJzQ0w1Y09ibU5TRm5ZYnM4NXR3Mk93PSIsIml2UGFyYW1ldGVyU3BlYyI6IjFkaHQvNkJBR05WK1ZJZWkiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)|
-| Frontend | ![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiRjZFajBNNFlBcEpVall4VXgxTUY3SHFaR1hvcUtwd25lcjBqM21DQ0s2QU9RUityRDBNZXVjcnlpQ0N6SWl0dDdJSGRZRklmVXgwM1pKaDQ0a3M5NWtFPSIsIml2UGFyYW1ldGVyU3BlYyI6InF6aWtXVjJLc25HRklIY0UiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)|
-
 References 
 -------
 [mostly from official CDK documentation](https://docs.aws.amazon.com/cdk/latest/guide/home.html)
@@ -89,3 +106,8 @@ Special Thanks:
 [for Frontend Design](https://github.com/tbhagat/ETLChallengeBackEnd)
 
 [for Bckend Design](https://github.com/dashmug/us-covid-stats)
+
+
+Disclaimer: 
+-------
+- This project has been implemented just for learning purposes. Please implement all security features for production usage.
