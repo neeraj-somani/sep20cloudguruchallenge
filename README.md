@@ -1,4 +1,10 @@
 
+US COVID Stats
+==============
+
+This project is an entry for [#CloudGuruChallenge](https://acloudguru.com/blog/news/introducing-the-cloudguruchallenge) ([Event-Driven Python in AWS](https://acloudguru.com/blog/engineering/cloudguruchallenge-python-aws-etl)) organized by [A Cloud Guru](https://acloudguru.com/).
+
+
 Welcome to Sep-2020 [#CloudGuruChallenge] (https://acloudguru.com/blog/news/introducing-the-cloudguruchallenge) project! [Event-Driven Python on AWS] (https://acloudguru.com/blog/engineering/cloudguruchallenge-python-aws-etl) 
 
 You should explore the contents of this project. It demonstrates a CDK app with an instance of a stack (`sep20cloudguruchallenge_stack`)
