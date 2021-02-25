@@ -6,7 +6,7 @@ Welcome to Sep-2020 CloudGuruChallenge
 
 
 You should explore the contents of this project. It demonstrates a CDK app with two instances of a stack (`backend_stack`) and (`frontend_stack`).
-which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.
+which contains all AWS related resources as illustrated in below architecture diagram.
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
