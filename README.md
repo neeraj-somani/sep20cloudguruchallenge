@@ -28,6 +28,8 @@ Data Pipeline (Backend) steps:
 
 ![Backend-DataPipeline - Cloudformation stack design](images/Backend-Stack-Design.png?raw=true "ETL")
 
+![Backend-DataPipeline - AWS-Resources-Architecture Diagram](images/Backend-Resource-Architecture.png?raw=true "AWS-Resources")
+
 Visualization (frontend) steps:
 1. Another S3 bucket has been used to host frontend web-pages for this project.
 2. An API Gateway service used to fetch data from Dynamodb, using lambda function. Please see below frontend architecture diagram.
