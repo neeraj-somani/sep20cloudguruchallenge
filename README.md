@@ -7,7 +7,7 @@ Welcome to Sep-2020 CloudGuruChallenge
 Outcome
 -------
 
-[Live demo](https://sep20cloudguruchallenge-spadeploywebsitebucket1e-1dqr7kpvnyk14.s3-us-west-2.amazonaws.com/index.html)
+[Visualization Dashboard](https://sep20cloudguruchallenge-spadeploywebsitebucket1e-1dqr7kpvnyk14.s3-us-west-2.amazonaws.com/index.html)
 
 [Read my blog article about this project.]
 
