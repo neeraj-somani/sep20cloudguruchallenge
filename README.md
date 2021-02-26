@@ -20,7 +20,7 @@ Outcome
 Architecture Overview
 -------
 Data Pipeline (Backend) steps:
-1. Job Schduling : Implemented through Event Bridge rules.
+1. Job Scheduling : Implemented through Event Bridge rules.
 2. Extraction: Implemented using Lambda function (python) to extract data directly from source github repository.
 3. Transformation: Pandas module used to perform data processing tasks. Lambda function used to implement this step.
 4. Load: Data has been loaded to DynamoDB as batch output. for daily incremental load, S3 bucket is used to refer previous run file.
