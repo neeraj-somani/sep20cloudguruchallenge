@@ -7,7 +7,7 @@ Welcome to Sep-2020 CloudGuruChallenge
 Outcome
 -------
 
-[Visualization Dashboard](https://sep20cloudguruchallenge-spadeploywebsitebucket1e-1dqr7kpvnyk14.s3-us-west-2.amazonaws.com/index.html)
+[Visualization Dashboard](https://sep20cloudguruchallenge-spadeploywebsitebucket1e-1dqr7kpvnyk14.s3-us-west-2.amazonaws.com/index.html) - This has been diabled to avoid recurring cost.
 
 [Read my blog article about this project.]
 
@@ -23,7 +23,7 @@ Data Pipeline (Backend) steps:
 1. Job Scheduling : Implemented through Event Bridge rules.
 2. Extraction: Implemented using Lambda function (python) to extract data directly from source github repository.
 3. Transformation: Pandas module used to perform data processing tasks. Lambda function used to implement this step.
-4. Load: Data has been loaded to DynamoDB as batch output. for daily incremental load, S3 bucket is used to refer previous run file.
+4. Load: Data has been loaded to DynamoDB as batch output. For daily incremental load, S3 bucket is used to compare data from previous day run file.
 5. Notification: SNS notification service has been implemented to notify the user after completion of the ETL job.
 
 ![Backend-DataPipeline - Cloudformation stack design](images/Backend-Stack-Design.png?raw=true "ETL")
@@ -38,7 +38,7 @@ Visualization (frontend) steps:
 
 Helpful CDK Overview
 -------
-You should explore the contents of this project. It demonstrates a CDK app with two instances of a stack (`backend_stack`) and (`frontend_stack`).
+You should explore the contents of this project. It demonstrates a CDK app with two instances of a stack `backend_stack` and `frontend_stack`.
 which contains all AWS related resources as illustrated in below architecture diagram.
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
